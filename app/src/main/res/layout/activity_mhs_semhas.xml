@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MhsSemhas">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profSemhasLayout"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageProfSemhas"
+                android:src="@drawable/splashscreen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:text="Menu Profile Semhas"
+                android:id="@+id/tv_ProfSemhas"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profSemhasLayout"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_ProfSemhas_mini"
+        android:text="Profile Seminar Hasil Anda :"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ProfSemhas_mini"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_profsemhas_judul">
+
+            <TextView
+                android:id="@+id/tv_profSemhas_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Judul :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul TA Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_profSemhas_judul_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_profsemhas_jdwl"
+            >
+
+            <TextView
+                android:id="@+id/tv_profSemhas_jdwl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Jadwal :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal SemHas Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_profSemhas_jdwl_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_profsemhas_shift"
+            >
+
+            <TextView
+                android:id="@+id/tv_profSemhas_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Shift : "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift SemHas Anda"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_profSemhas_jdwl_shift_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_profsemhas_pgj1">
+
+            <TextView
+                android:id="@+id/tv_ProfSemhas_pgj1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Penguji I :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penguji I Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_ProfSemhas_pgj1_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_profsemhas_pgj2">
+
+            <TextView
+                android:id="@+id/tv_ProfSemhas_pgj2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Penguji II :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penguji II Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_ProfSemhas_pgj2_desc"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

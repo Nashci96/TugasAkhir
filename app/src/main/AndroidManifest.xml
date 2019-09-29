@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.okedroid.apktaichsan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DsnKompreAct"></activity>
+        <activity android:name=".DsnSemhasAct" />
+        <activity android:name=".DsnSemproAct" />
+        <activity android:name=".DsnKompre" />
+        <activity android:name=".DsnSemhas" />
+        <activity android:name=".DsnSempro" />
+        <activity android:name=".AdmVerKompre" />
+        <activity android:name=".AdmVerSemhas" />
+        <activity android:name=".AdmVerSempro" />
+        <activity android:name=".AdmRegKompre" />
+        <activity android:name=".AdmRegSemhas" />
+        <activity android:name=".AdmRegSempro" />
+        <activity android:name=".KpdListSemhasAct" />
+        <activity android:name=".KpdListSemproAct" />
+        <activity android:name=".KpdListKompreAct" />
+        <activity android:name=".KpdListKompre" />
+        <activity android:name=".KpdListSemhas" />
+        <activity android:name=".KpdListSempro" />
+        <activity android:name=".AdmAAkunDsn" />
+        <activity android:name=".AdmAAkunMhs" />
+        <activity android:name=".AdmFAkunDsn" />
+        <activity android:name=".AdmFAkunMhs" />
+        <activity android:name=".AdmResDsnSet" />
+        <activity android:name=".AdmResMhsSet" />
+        <activity android:name=".AdmResDsn" />
+        <activity android:name=".AdmResMhs" />
+        <activity android:name=".MhsProgressBimbingan" />
+        <activity android:name=".KpdDataTopikMhs" />
+        <activity android:name=".DsnDataBimbinganMhs" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DsnJdwlSeminarSidang" />
+        <activity android:name=".DsnInputJdwl" />
+        <activity android:name=".DsnDftrMhsBimbingan" />
+        <activity android:name=".DsnQRScanner" />
+        <activity android:name=".KpdJdwlAntrianSidang" />
+        <activity android:name=".KpdAlokasiPgj" />
+        <activity android:name=".KpdAlokasiPbb" />
+        <activity android:name=".MhsKompre" />
+        <activity android:name=".MhsSemhas" />
+        <activity android:name=".MhsSempro" />
+        <activity android:name=".MhsProfileTa" />
+        <activity android:name=".MhsDftrKendaliBimbingan" />
+        <activity android:name=".MhsQRGenerator" />
+        <activity android:name=".AdmFreezeAkun" />
+        <activity android:name=".AdmResetPassAkun" />
+        <activity android:name=".AdmJdwlAntrian" />
+        <activity android:name=".AdmRegSidang" />
+        <activity android:name=".AdmPengaturanAkun" />
+        <activity android:name=".AdmRegAkunDsn" />
+        <activity android:name=".AdmRegAkunMhs" />
+        <activity android:name=".AdmRegAkun" />
+        <activity android:name=".AdmProfile" />
+        <activity android:name=".AdmMainMenu" />
+        <activity android:name=".KpdProfile" />
+        <activity android:name=".KpdMainMenu" />
+        <activity android:name=".DsnProfile" />
+        <activity android:name=".DsnJadwal" />
+        <activity android:name=".DsnKendaliBimbingan" />
+        <activity android:name=".DsnMainMenu" />
+        <activity android:name=".MhsSidang" />
+        <activity android:name=".MhsTugasAkhir" />
+        <activity android:name=".MhsMenuKendaliBimbingan" />
+        <activity android:name=".MhsPengajuanTopik" />
+        <activity android:name=".MhsMainMenu" />
+        <activity android:name=".MhsProfile" />
+        <activity android:name=".LoginActivityAdm" />
+        <activity android:name=".LoginActivityKpd" />
+        <activity android:name=".LoginActivityDsn" />
+        <activity android:name=".LoginActivityMhs" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

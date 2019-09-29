@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "565333956874",
+    "firebase_url": "https://tapenjadwalan-8459e.firebaseio.com",
+    "project_id": "tapenjadwalan-8459e",
+    "storage_bucket": "tapenjadwalan-8459e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565333956874:android:292c063258cc4344de02f3",
+        "android_client_info": {
+          "package_name": "com.okedroid.apktaichsan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565333956874-g01095nmo337io15p39tm8pdu28ompa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhWjM7OMj7Ixh7GMw97MLi9MVVVqMwSTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565333956874-g01095nmo337io15p39tm8pdu28ompa2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

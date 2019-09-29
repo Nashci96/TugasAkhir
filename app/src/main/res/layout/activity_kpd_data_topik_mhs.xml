@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KpdDataTopikMhs">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/infoMhs"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:contentPadding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/splashscreen"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="20sp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="namaDsn"
+                        android:id="@+id/namaMhs_data_topik"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="namaDsn"
+                        android:id="@+id/noBpMhs_data_topik"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="namaDsn"
+                        android:id="@+id/topikTA_data_topik"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="namaDsn"
+                        android:id="@+id/deskripsi_data_topik"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_below="@id/infoMhs"
+            app:hintText="Pembimbing I"
+            android:id="@+id/spinnerPembimbingI"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_below="@id/spinnerPembimbingI"
+            app:hintText="Pembimbing II"
+            android:id="@+id/spinnerPembimbingII"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius"
+            android:layout_below="@id/spinnerPembimbingII"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="CONFIRM"
+            android:textColor="@color/white"
+            android:id="@+id/confirmButton"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

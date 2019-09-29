@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KpdListKompreAct">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/KpdKompreLayout"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:text="Nama Mahasiswa"
+                android:id="@+id/tv_KpdKompreLayout_Nama"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:text="NO BP Mahasiswa"
+                android:id="@+id/tv_KpdKompreLayout_BP"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KpdKompreLayout"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/KpdKompreLayoutmini"
+        android:text="Data Seminar / Sidang :"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KpdKompreLayoutmini"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_tgl">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Tanggal :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Seminar / Sidang"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_tgl_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_shift">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Shift :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift Seminar / Sidang"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_shift_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_judul"
+            >
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Judul :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul TA"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_judul_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_pbb1">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_pbb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Pembimbing I :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembimbing I Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_pbb1_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_pbb2">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_pbb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Pembimbing II :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembimbing II Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_pbb2_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_pgj1">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_pgj1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Penguji I :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penguji I Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_pgj1_desc"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_KpdKompre_pgj2">
+
+            <TextView
+                android:id="@+id/tv_KpdKompre_pgj2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Penguji II :"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penguji II Anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/tv_KpdKompre_pgj2_desc"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

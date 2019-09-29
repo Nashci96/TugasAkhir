@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:title="Edit"
+        android:id="@+id/menu_edit_mhs"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher_edit_icon"
+        />
+
+    <item
+        android:title="Save"
+        android:id="@+id/menu_save_mhs"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher_check_icon"
+        />
+
+</menu>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdmResMhsSet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_profMhs_res"
+        android:text="Profile Dosen :"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_profMhs_res"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_namaMhs_res">
+
+            <TextView
+                android:id="@+id/tv_namaMhs_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Nama :  "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mahasiswa"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/namaMhs_res_mhs_set"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_nobpMhs_res"
+            >
+
+            <TextView
+                android:id="@+id/tv_nobpMhs_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  NOBP :   "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOBP Mahasiswa"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/nobpMhs_res_mhs_set"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_passMhs_res">
+
+            <TextView
+                android:id="@+id/tv_passMhs_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  PassW Baru :    "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="inputkan pass baru anda"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:id="@+id/et_pass_mhs_res_set"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_b_dsn_res">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textSize="25dp"
+                android:id="@+id/b_update_res_mhs"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

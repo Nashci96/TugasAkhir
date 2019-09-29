@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdmJdwlAntrian">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvAdmMenuJdwlSeminar"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/splashscreen"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:text="Menu Jadwal Seminar "
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@+id/cvAdmMenuJdwlSeminar"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opsi Jadwal Seminar dan SIdang yang tersedia : "
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="JadwalSeminar Proposal "
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:id="@+id/bAdmJdwlSempro"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="Jadwal Seminar Hasil "
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:id="@+id/bAdmJdwlSemhas"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="Jadwal Sidang Komprehensif "
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:id="@+id/bAdmJdwlKompre"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

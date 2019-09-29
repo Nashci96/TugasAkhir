@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MhsMainMenu">
+
+    <Button
+        android:id="@+id/buttonMhsProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        android:text="Profile"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPengajuanTopik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoBPMhsMenu" />
+
+    <Button
+        android:id="@+id/buttonPengajuanTopik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="26dp"
+        android:text="Pengajuan Topik"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKendaliBimbinganMhs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMhsProfile" />
+
+    <Button
+        android:id="@+id/buttonKendaliBimbinganMhs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="29dp"
+        android:text="Kendali Bimbingan"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTugasAkhirMhs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPengajuanTopik" />
+
+    <Button
+        android:id="@+id/buttonTugasAkhirMhs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="30dp"
+        android:text="Tugas Akhir"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSidangMhs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKendaliBimbinganMhs" />
+
+    <Button
+        android:id="@+id/buttonSidangMhs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="21dp"
+        android:text="Sidang"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMhsLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTugasAkhirMhs" />
+
+    <Button
+        android:id="@+id/buttonMhsLogOut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="30dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSidangMhs" />
+
+    <TextView
+        android:id="@+id/textViewNoBPMhsMenu"
+        android:layout_width="138dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="13dp"
+        android:text="No BP"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMhsProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewNameMhsMenu" />
+
+    <TextView
+        android:id="@+id/textviewNameMhsMenu"
+        android:layout_width="143dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="11dp"
+        android:text="Mahasiswa"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNoBPMhsMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
