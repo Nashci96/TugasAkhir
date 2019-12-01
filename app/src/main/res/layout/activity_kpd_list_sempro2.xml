@@ -64,7 +64,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/ll_KpdSemproMenuPgt"
         android:layout_below="@+id/KpdSemproLayoutmini"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Ganti Pgj 1"
+            android:id="@+id/KpdSemproBtnPgtPgj1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Ganti Pgj 2"
+            android:id="@+id/KpdSemproBtnPgtPgj2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_KpdSemproMenuPgt"
         android:orientation="vertical"
         >
 

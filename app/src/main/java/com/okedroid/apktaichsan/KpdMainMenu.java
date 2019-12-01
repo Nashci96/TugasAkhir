@@ -98,15 +98,53 @@ public class KpdMainMenu extends AppCompatActivity {
 //                sessionManager.logout();
                 SharedPreferences sharedPreferences = getSharedPreferences("user", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
+                logout();
                 editor.putString("level", "empty");
                 editor.putString("user", "empty");
                 editor.putString("name", "empty");
+                editor.putString("token", "empty");
                 editor.apply();
                 Intent intent = new Intent(KpdMainMenu.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+    }
+
+    private void logout() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL.KpdLogout,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            String success = jsonObject.getString("success");
+                            String message = jsonObject.getString("message").trim();
+                            if (success.equals("1")) {
+                                Toast.makeText(KpdMainMenu.this, "Success!", Toast.LENGTH_LONG).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(KpdMainMenu.this, "Error : " + e.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(KpdMainMenu.this, "Error : " + error.toString(), Toast.LENGTH_LONG).show();
+                    }
+                })
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String>params = new HashMap<>();
+                params.put("id",getId);
+                return params;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
     }
 
     private void getUserDetail(){

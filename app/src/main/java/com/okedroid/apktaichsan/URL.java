@@ -16,6 +16,11 @@ public class URL {
     public static final String KpdProfUpload = "http://10.0.2.2/ta/kpd/upload.php";
     public static final String KpdAlokasiPbb = "http://10.0.2.2/ta/kpd/alokasipbb.php";
     public static final String KpdListTopik = "http://10.0.2.2/ta/kpd/listTopikTa.php";
+    public static final String KpdToken = "http://10.0.2.2/ta/kpd/token.php";
+    public static final String KpdLogout = "http://10.0.2.2/ta/kpd/logout.php";
+    public static final String AlokasiPgjPgtSempro = "http://10.0.2.2/ta/kpd/alokasiPgjPgtSempro.php";
+    public static final String AlokasiPgjPgtSemhas = "http://10.0.2.2/ta/kpd/alokasiPgjPgtSemhas.php";
+    public static final String AlokasiPgjPgtKompre = "http://10.0.2.2/ta/kpd/alokasiPgjPgtKompre.php";
 
     //Adm
     public static final String ListRegSempro = "http://10.0.2.2/ta/adm/reqSempro.php";
@@ -39,8 +44,10 @@ public class URL {
     public static final String AdmProfUpload = "http://10.0.2.2/ta/adm/upload.php";
     public static final String AdmRegistAkunDsn = "http://10.0.2.2/ta/adm/regDsn.php";
     public static final String AdmRegistAkunMhs = "http://10.0.2.2/ta/adm/regMhs.php";
-    public static final String AdmResetAkunDsn = "http://10.0.2.2/ta/adm/resetDsn.php" ;
-    public static final String AdmResetAkunMhs = "http://10.0.2.2/ta/adm/resetMhs.php" ;
+    public static final String AdmResetAkunDsn = "http://10.0.2.2/ta/adm/resetDsn.php";
+    public static final String AdmResetAkunMhs = "http://10.0.2.2/ta/adm/resetMhs.php";
+    public static final String AdmToken = "http://10.0.2.2/ta/adm/token.php";
+    public static final String AdmLogout = "http://10.0.2.2/ta/adm/logout.php";
 
     //Dsn
     public static final String ListDsnSempro = "http://10.0.2.2/ta/dsn/DsnSempro.php";
@@ -55,9 +62,13 @@ public class URL {
     public static final String DsnProfEdit = "http://10.0.2.2/ta/dsn/edit.php";
     public static final String DsnProfRead = "http://10.0.2.2/ta/dsn/read_detail_edit.php";
     public static final String DsnProfUpload = "http://10.0.2.2/ta/dsn/upload.php";
+    public static final String DsnToken = "http://10.0.2.2/ta/dsn/token.php";
+    public static final String DsnLogout = "http://10.0.2.2/ta/dsn/logout.php";
 
     //Mhs
     public static final String LoginMhs = "http://10.0.2.2/ta/mhs/login.php";
+    public static final String MhsToken = "http://10.0.2.2/ta/mhs/token.php";
+    public static final String MhsLogout = "http://10.0.2.2/ta/mhs/logout.php";
     public static final String MhsReadMM = "http://10.0.2.2/ta/mhs/read_detail.php";
     public static final String MhsProfEdit = "http://10.0.2.2/ta/mhs/edit.php";
     public static final String MhsProfRead = "http://10.0.2.2/ta/mhs/read_detail_edit.php";

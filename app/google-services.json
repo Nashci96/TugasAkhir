@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "565333956874-4cnaq6knjksgadvh3a81ubq1c1h2fsmk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.okedroid.apktaichsan",
+            "certificate_hash": "1300327f79e9c4fc4595ed48b17e573024f0534c"
+          }
+        },
+        {
           "client_id": "565333956874-g01095nmo337io15p39tm8pdu28ompa2.apps.googleusercontent.com",
           "client_type": 3
         }
